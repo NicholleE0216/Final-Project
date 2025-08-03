@@ -47,6 +47,10 @@ li{
     color: #6415ff;
 }
 
+.btn{
+
+}
+
 /*
 
 NAVAGATION BAR
@@ -455,4 +459,130 @@ STEPS
     margin-top: 12px;
     font-size: 14px;
     color: #718096;
+}
+
+/*
+
+VALUES
+
+*/
+
+#values{
+    padding: 0 32px;
+}
+
+.value__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.values__head--title{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 32px 64px 32px 0;
+}
+
+.values__main--title{
+    margin: 16px 0 32px;
+    font-size: 48px;
+}
+
+.values__para{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #7c8ba1;
+}
+
+.values__principles{
+    display: flex;
+}
+
+.values__affordable{
+    margin: 32px 32px 0 0;
+}
+
+.affordable__title{
+    display: flex;
+}
+
+.affordable__title--text{
+    margin-left: 12px;
+}
+
+.affordable__img{
+    background-color: #9ae6b4;
+    color: rgba(39, 103, 73);
+    font-weight: 400;
+    width: 36px;
+    height: 36px;
+    border-radius: 400px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.affordable__para{
+    margin-top: 16px;
+    color: #718096;
+    font-size: 16px;
+    line-height: 1.625;
+}
+
+.values__professionalism{
+    margin-top: 32px;
+}
+
+.professionalism__title{
+    display: flex;
+}
+
+.professionalism__title--text{
+    margin-left: 12px;
+}
+
+.professionalism__img--wrapper{
+    background-color: #feb2b2;
+    width: 36px;
+    height: 36px;
+    border-radius: 400px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.principles__img--wrapper{
+    width: 50%;
+}
+
+.principles__img{
+    width: 100%;
+}
+
+.professionalism__para{
+    margin-top: 16px;
+    color: #718096;
+    font-size: 16px;
+    line-height: 1.625;
+}
+
+.values__btn{
+    background-color: #6415ff;
+    color: white;
+    margin-top: 48px;
+    padding: 12px 32px;
+    border-radius: 500px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 300ms;
+    border: none;
+    width: 100%;
+    max-width: 142px;
+}
+
+.values__btn:hover{
+    background-color: rgba(80, 17, 204);
 }
