@@ -390,6 +390,8 @@ STEPS
 
 .steps__img--wrapper{
  width: 50%;
+ display: flex;
+ position: relative;
 }
 
 .steps__img{
@@ -400,7 +402,10 @@ STEPS
 .steps__grid{
     position: absolute;
     opacity: 0.15;
-    transform: translateX(-275px) translateY(240px);
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%) scaleX(1) scaleY(1);
     width: 80px;
     height: 80px;
     fill: rgba(100, 21, 255);
