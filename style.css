@@ -35,7 +35,7 @@ li{
 
 .row{
     width: 100%;
-    max-width: 1080px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -384,24 +384,39 @@ STEPS
 
 .steps__row{
     display: flex;
-    flex-direction: row-reverse;
     align-items: center;
+    justify-content: space-between;
 }
 
 .steps__img--wrapper{
-    width: 50%;
+ width: 50%;
 }
 
 .steps__img{
     width: 100%;
+    z-index: 2;
+}
+
+.steps__grid{
+    position: absolute;
+    opacity: 0.15;
+    transform: translateX(-275px) translateY(240px);
+    width: 80px;
+    height: 80px;
+    fill: rgba(100, 21, 255);
+    z-index: 1;
 }
 
 .steps__section{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
     padding: 32px 0 32px 64px;
 }
 
 .steps__head--title{
     margin: 16px 0;
+    line-height: 1.5;
 }
 
 .steps__list{
