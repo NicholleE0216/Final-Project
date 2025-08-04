@@ -47,8 +47,9 @@ li{
     color: #6415ff;
 }
 
-.btn{
-
+button{
+    cursor: pointer;
+    border: none;
 }
 
 /*
@@ -585,4 +586,103 @@ VALUES
 
 .values__btn:hover{
     background-color: rgba(80, 17, 204);
+}
+
+/*
+
+PRICING
+
+*/
+
+#pricing{
+    padding: 0 32px;
+}
+
+.pricing__head--title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing__main--title{
+    margin: 16px 0;
+}
+
+.pricing__para{
+    width: 100%;
+    max-width: 576px;
+}
+
+.main__para{
+    text-align: center;
+}
+
+.plans{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.plan{
+    width: calc(100% /3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 2px solid rgb(229, 231, 235);
+    margin-top: 64px;
+    margin-right: 32px;
+    padding: 8px;
+}
+
+.personal__plan--stripe{
+    height: 8px;
+    width: 100%;
+}
+
+.top{
+    padding: 32px;
+}
+
+.type__plan{
+    font-size: 20px;
+    color: #1A202c;
+}
+
+.price__plan{
+    font-size: 48px;
+    color: #1A202c;
+    margin: 4px 0;
+}
+
+.monthly__plan{
+    color: #a0aec0;
+}
+
+.middle{
+   padding: 32px;
+}
+
+.plan__details{
+    font-size: 20px;
+    color: #1A202c;
+}
+
+.detail{
+    color: #718096;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.bottom{
+    padding: 32px 64px;
+}
+
+.plan__btn{
+    padding: 16px 32px;
+    border-radius: 500px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    transition: all 300ms;
 }
