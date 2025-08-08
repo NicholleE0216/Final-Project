@@ -620,7 +620,6 @@ PRICING
 
 .plans{
     display: flex;
-    flex-wrap: wrap;
 }
 
 .plan{
@@ -632,15 +631,55 @@ PRICING
     border: 2px solid rgb(229, 231, 235);
     margin-top: 64px;
     margin-right: 32px;
-    padding: 8px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+    rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, 
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    padding-top: 8px;
 }
 
 .personal__plan--stripe{
     height: 8px;
     width: 100%;
+    position: absolute;
+    background: Linear-gradient(
+     115deg,
+    rgb(56, 178, 172) 0%,  
+    rgb(129, 230, 217) 100%);
+    display: flex;
+    transform: translateY(-8px);
+}
+
+.enterprise__plan--stripe{
+    height: 8px;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(
+        115deg,
+        rgb(245, 101, 101) 0%,
+        rgb(254, 178, 178) 100%);
+    display: flex;
+    transform: translateY(-8px);
+}
+
+.plan:nth-child(2) {
+    background: linear-gradient(
+    135deg, 
+    rgb(76, 81, 191) 0%, 
+    rgb(102, 126, 234) 100%);
+}
+
+.plan:nth-child(2) 
+.middle {
+    border-top: 2px solid rgb(102, 126, 234);
+    border-bottom: 2px solid rgb(102, 126, 234);
 }
 
 .top{
+    width: 100%;
     padding: 32px;
 }
 
@@ -660,7 +699,11 @@ PRICING
 }
 
 .middle{
-   padding: 32px;
+    position: relative;
+    width: 100%;
+    padding: 32px;
+    border-top: 2px solid rgb(229, 231, 235);
+    border-bottom: 2px solid rgb(229, 231, 235);
 }
 
 .plan__details{
@@ -675,6 +718,7 @@ PRICING
 }
 
 .bottom{
+    width: 100%;
     padding: 32px 64px;
 }
 
@@ -685,4 +729,181 @@ PRICING
     font-weight: 600;
     line-height: 1.5;
     transition: all 300ms;
+}
+
+.plan__btn:hover{
+    transform: translate(1px, -1px);
+    box-shadow:
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+    rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, 
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.business__type--plan{
+    font-size: 20px;
+    color: #f7fafc;
+}
+
+.business__price--plan{
+    font-size: 48px;
+    color: #f7fafc;
+    margin: 4px 0;
+}
+
+.business__monthly--plan{
+    color: #f7fafc;
+}
+
+.business__plan--details{
+    font-size: 20px;
+    color: #f7fafc;
+}
+
+.business__detail{
+    color: #f7fafc;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.personal__btn{
+    color: #f7fafc;
+    background: linear-gradient(
+        115deg,
+        rgb(56, 178, 172) 0%,
+        rgb(129, 230, 217)100%);
+}
+
+.business__btn{
+    color: #6415ff;
+    background-color: #f7fafc;
+}
+
+.enterprise__btn{
+    color: #f7fafc;
+    background: linear-gradient(
+        115deg,
+        rgb(245, 101, 101) 0%,
+        rgb(254, 178, 178) 100%);
+}
+
+/*
+
+TESTIMONIALS
+
+*/
+
+#testimonials{
+    padding: 0 32px;
+}
+
+.testimonials__row{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.testimonials__description{
+    padding-left: 64px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.testimonials__head--title{
+    margin: 16px 0 24px;
+}
+
+.testimonials__para{
+
+}
+
+.testimonial{
+    margin-top: 40px;
+}
+
+.testimonial__rating i{
+    color: rgba(246, 173, 85);
+}
+
+.testimonial__title{
+    margin-top: 16px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.testimonial__para{
+    margin: 16px 0 40px;
+}
+
+.tesitmonial__profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial__profile--img--wrapper{
+    width: 80px;
+    height: 80px;
+}
+
+.testimonial__profile--img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.tesitmonial__profile{
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile__description{
+    display: flex;
+    align-items: center;
+}
+.profile__info{
+padding-left: 24px;
+}
+
+.testimonial__name{
+    font-size: 20px;
+    font-weight: 700;
+    color: #243e63;
+    line-height: 1.5;
+}
+
+.testimonial__role{
+    font-size: 16px;
+    color: #7c8ba1;
+    line-height: 1.5;
+}
+
+.testimonials__btns{
+    display: flex;
+}
+
+.testimonials__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    background-color: #edf2f7;
+    border-radius: 50%;
+    margin: 0 12px;
+    transition: all 300ms;
+}
+
+.testimonials__btn:hover{
+    color: rgb(226, 232, 240);
+}
+
+.testimonials__img--wrapper{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials__img{
+    width: 100%;
 }
