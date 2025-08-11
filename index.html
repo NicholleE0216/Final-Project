@@ -9,7 +9,7 @@
       src="https://kit.fontawesome.com/cd597b8f5e.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="script.js" href="./script.js" />
+    <script src="index.js"></script>
   </head>
   <section id="landing">
     <nav>
@@ -27,13 +27,41 @@
           </div>
         </div>
         <div class="nav__links">
-          <a class="nav__link" href="about">About</a>
-          <a class="nav__link" href="about">Blog</a>
-          <a class="nav__link" href="about">Pricing</a>
-          <a class="nav__link" href="about">Contact Us</a>
-          <a class="nav__link--login" href="Login">Login</a>
-          <a class="nav__link--sign--up" href="sign-up">Sign Up</a>
+          <a class="nav__link" href="#features">About</a>
+          <a class="nav__link" href="#values">Blog</a>
+          <a class="nav__link" href="#pricing">Pricing</a>
+          <a class="nav__link" href=""style="pointer-events: none;">Contact Us</a>
+          <a class="nav__link--login" href=""style="pointer-events: none;">Login</a>
+          <a class="nav__link--sign--up" href=""style="pointer-events: none;">Sign Up</a>
         </div>
+      </div>
+      <button class="btn__menu" onclick="openMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="menu__backdrop">
+        <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="menu__links">
+          <li class="menu__list">
+            <a class="menu__link" href="#features" onclick="closeMenu()">About</a>
+          </li>
+          <li class="menu__list">
+            <a class="menu__link" href="#values" onclick="closeMenu()">Blog</a>
+          </li>
+          <li class="menu__list">
+            <a class="menu__link" href="#pricing" onclick="closeMenu()">Pricing</a>
+          </li>
+          <li class="menu__list">
+            <a class="menu__link" href="#" style="pointer-events: none;" onclick="closeMenu()">Contact Us</a>
+          </li>
+          <li class="menu__list">
+            <a class="menu__link" href="#" style="pointer-events: none;"onclick="closeMenu()">Login</a>
+          </li>
+          <li class="menu__list">
+            <button class="menu__link--btn" style="pointer-events: none;" onclick="closeMenu()">Sign Up</button>
+          </li>
+        </ul>
       </div>
     </nav>
     <header>
