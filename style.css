@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Inter', system-ui;
     color: #243e63;
+    scroll-behavior: smooth;
 }
 
 a{
@@ -1295,8 +1296,123 @@ z-index: 2;
         align-items: center;
         text-align: center;
         width: 100%;
+        margin-left: 0;
     }
 
+    .steps__number{
+        text-align: center;
+    }
+
+    .value__row{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .values__head--title{
+        padding: 0;
+        align-items: center;
+        width: 100%;
+        max-width: 448px;
+    }
+
+    .values__principles{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .values__affordable{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .values__professionalism{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing__row{
+        margin-top: 40px;
+    }
+
+    .pricing__head--title{
+        text-align: center;
+    }
+
+    .plans{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .plan{
+        width: 100%;
+        max-width: 448px;
+        margin: 64px 0 0 0;
+    }
+
+    .testimonials__row{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    .testimonials__img{
+        width: 100%;
+        max-width: 448px;
+    }
+
+    .testimonials__description{
+        width: 100%;
+        max-width: 448px;
+        padding: 0;
+    }
+
+    .testimonials__head--title{
+        width: 100%;
+        
+    }
+
+    .testimonial__profile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .starting__row{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .start__title{
+        font-size: 24px;
+        width: 100%;
+    }
+
+    .start__btns{
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .start__btn--first{
+        width: 100%;
+        padding: 12px 24px;
+        font-size: 14px;
+        margin: 24px 0 0 0;
+    }
+
+    .start__btn--second{
+        width: 100%;
+        padding: 12px 24px;
+        font-size: 14px;
+        margin-top: 24px;
+    }
  }
 
  @media (max-width:576px) {
@@ -1308,4 +1424,5 @@ z-index: 2;
         align-items: center;
         text-align: center;
     }
+
  }
