@@ -1171,6 +1171,11 @@ z-index: 2;
     letter-spacing: 0.05em;
  }
 
+ .footer__title:hover{
+    color: #f7fafc;
+    text-decoration: none;
+ }
+
  .copyright{
     color: #cbd5e0;
     font-weight: 500;
@@ -1412,6 +1417,11 @@ z-index: 2;
         padding: 12px 24px;
         font-size: 14px;
         margin-top: 24px;
+    }  
+
+    .footer__bottom{
+        flex-direction: column;
+        gap: 24px;
     }
  }
 
